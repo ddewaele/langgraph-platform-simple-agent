@@ -1,12 +1,12 @@
 import {AIMessage, HumanMessage} from "@langchain/core/messages";
 import { ChatOpenAI } from "@langchain/openai";
-// import { TavilySearch } from "@langchain/tavily";
-import { TavilySearchResults } from "@langchain/community/tools/tavily_search"; // Using this depcrecated community version because the new TavilySearch does not work.
+import { TavilySearch } from "@langchain/tavily"; // this one does not work/
+// import { TavilySearchResults } from "@langchain/community/tools/tavily_search"; // Using this depcrecated community version because the new TavilySearch does not work.
 import { MessagesAnnotation, StateGraph } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
 
-const tools = [new TavilySearchResults({ maxResults: 3 })];
-// const tools = [new TavilySearch({ maxResults: 3 })];
+// const tools = [new TavilySearchResults({ maxResults: 3 })];
+const tools = [new TavilySearch({ maxResults: 3 })];
 
 // Define the function that calls the model
 async function callModel(state: typeof MessagesAnnotation.State) {
