@@ -1,0 +1,31 @@
+{
+  "name": "langgraph-platform-simple-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "start": "node dist/agent.js",
+    "dev": "ts-node-dev --respawn src/agent.ts",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@langchain/langgraph-cli": "^0.0.51",
+    "@types/node": "^24.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.49",
+    "@langchain/core": "^0.3.66",
+    "@langchain/langgraph": "^0.3.11",
+    "@langchain/openai": "^0.6.3",
+    "@langchain/tavily": "^0.1.4"
+  }
+}
