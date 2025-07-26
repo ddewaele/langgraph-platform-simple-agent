@@ -1,7 +1,7 @@
 import {AIMessage, HumanMessage} from "@langchain/core/messages";
 import { ChatOpenAI } from "@langchain/openai";
 // import { TavilySearch } from "@langchain/tavily";
-import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+import { TavilySearchResults } from "@langchain/community/tools/tavily_search"; // Using this depcrecated community version because the new TavilySearch does not work.
 import { MessagesAnnotation, StateGraph } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
 

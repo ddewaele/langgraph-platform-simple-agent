@@ -206,7 +206,11 @@ info:    ▪ --> POST /assistants/search 200 0ms
 
 Your browser should show something like this
 
-![img.png](img.png)
+![img.png](docs/img.png)
+
+## deploying to LangGraph
+
+![img_1.png](docs/img_1.png)
 
 ## References
 
